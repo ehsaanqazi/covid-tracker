@@ -1,0 +1,127 @@
+:root {
+  --black: black;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  /* overflow: hidden; */
+  background-color: #f7f8fc;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #424b54;
+}
+
+.header h1 {
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+.header select {
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  background: none;
+  color: white;
+}
+
+.header option {
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.countries {
+  background-color: rgb(241, 241, 241);
+  background-color: #ecf0f1;
+  height: 100%;
+  position: absolute;
+  top: 3.1rem;
+}
+.countries::-webkit-scrollbar {
+  display: none;
+}
+.countries__item {
+  margin-bottom: 0px;
+  padding: 5px 5px;
+}
+.item__active {
+  background-color: #ffffff;
+}
+.countries__item:hover {
+  background-color: #7f8c8d;
+}
+.countries__item ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.countries__item li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+}
+.countries__item li img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.cards {
+  z-index: auto;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.card h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 22px;
+  color: #222;
+}
+
+.card i {
+  font-size: 22px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #3398fb 0%, #8553ee 100%);
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 0px;
+}
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px !important;
+}
+
+select option[selected] {
+  background-color: black;
+}
+select option {
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+}
